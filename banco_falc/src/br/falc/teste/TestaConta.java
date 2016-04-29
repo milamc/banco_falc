@@ -3,6 +3,7 @@ package br.falc.teste;
 import java.util.Scanner;
 
 import br.falc.gerenciador.GerenciadorDeContas;
+import br.falc.modelo.Conta;
 import br.falc.modelo.ContaCorrente;
 import br.falc.modelo.ContaPoupanca;
 
@@ -19,6 +20,7 @@ public class TestaConta {
 		GerenciadorDeContas gc = new GerenciadorDeContas(10);
 		ContaCorrente c1 = new ContaCorrente(limite);
 		ContaPoupanca c2 = new ContaPoupanca();
+		Conta c3 = new ContaCorrente(limite);
 		
 		gc.adicionarConta(c1);
 		gc.adicionarConta(c2);

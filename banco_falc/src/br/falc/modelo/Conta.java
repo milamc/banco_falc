@@ -1,6 +1,6 @@
 package br.falc.modelo;
 
-public class Conta {
+public abstract class Conta {
 
 	private String nome;
 	private int numero;
@@ -51,4 +51,7 @@ public class Conta {
 	public String toString() {
 		return "Cliente: "+ nome+" Saldo: "+saldo;
 	}
+	
+	public abstract void atualizarValor();
+	
 }

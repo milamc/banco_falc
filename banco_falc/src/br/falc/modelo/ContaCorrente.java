@@ -33,4 +33,10 @@ public class ContaCorrente extends Conta{
 	public String toString() {
 		return super.toString() + " Limite: "+limite;
 	}
+
+	@Override
+	public void atualizarValor() {
+		System.out.println("Valor: "+getSaldo()+limite);
+		
+	}
 }
