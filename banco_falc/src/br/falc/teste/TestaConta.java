@@ -11,7 +11,8 @@ public class TestaConta {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		String nome = null;
+		String nome = "";
+		String nome2 = "";
 		int numero = 0;
 		double saldo = 0D;
 		double limite = 0D;
@@ -24,7 +25,6 @@ public class TestaConta {
 		
 		System.out.println("Digite o nome do primeiro cliente:");
 		nome = sc.nextLine();
-		sc.next();
 		
 		System.out.println("Digite o número da primeira conta:");
 		numero = sc.nextInt();
@@ -40,9 +40,10 @@ public class TestaConta {
 		c1.depositar(saldo);
 		c1.setLimite(limite);
 		
+		sc.nextLine();
+		
 		System.out.println("Digite o nome do segundo cliente:");
-		nome = sc.nextLine();
-		sc.next();
+		nome2 = sc.nextLine();
 		
 		System.out.println("Digite o número da segundo conta:");
 		numero = sc.nextInt();
@@ -50,7 +51,7 @@ public class TestaConta {
 		System.out.println("Digite o valor do segundo depósito:");
 		saldo = sc.nextDouble();
 		
-		c2.setNome(nome);
+		c2.setNome(nome2);
 		c2.setNumero(numero);
 		c2.depositar(saldo);
 		

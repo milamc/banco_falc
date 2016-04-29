@@ -24,7 +24,7 @@ public class GerenciadorDeContas {
 	
 	public void imprimir(){
 		for(int i = 0; i < pos; i++){
-			System.out.println(contas);
+			System.out.println(contas[i]);
 			System.out.println("---------------");
 		}
 	}
